@@ -1,21 +1,21 @@
 /*
 
-Realice un programa el cual solicite al usuario el ingreso de un valor entero ìnî que ser· la cantidad de productos a procesar.
+Realice un programa el cual solicite al usuario el ingreso de un valor entero ‚Äún‚Äù que ser√° la cantidad de productos a procesar.
 
-Una vez ingresado n, se deber· crear un matriz de n Filas x 2 Columnas de valores tipo float.
+Una vez ingresado n, se deber√° crear un matriz de n Filas x 2 Columnas de valores tipo float.
 
 Luego se debe solicitar al usuario el ingreso de los n x 2 valores floats de la matriz.
 
-La columna 0, tendr· los precios de venta por menor de los productos y la columna 1 los precios de venta por mayor.
+La columna 0, tendr√° los precios de venta por menor de los productos y la columna 1 los precios de venta por mayor.
 
-Los productos se identificar·n por su n˙mero de FILA (subÌndice).
+Los productos se identificar√°n por su n√∫mero de FILA (sub√≠ndice).
 
-Al ingresar los datos se debe verificar SIEMPRE que el valor de la columna 1 sea menor al de la columna 0 por ser precio por mayor. Sino solicitar reingreso hasta que sea v·lido.
+Al ingresar los datos se debe verificar SIEMPRE que el valor de la columna 1 sea menor al de la columna 0 por ser precio por mayor. Sino solicitar reingreso hasta que sea v√°lido.
 
 Una vez cargada la matriz, el programa debe determinar el mayor porcentaje de descuento. Debe imprimir por pantalla un mensaje indicando el porcentaje de descuento con 
 Formato de dos decimales.
 
-Ejemplo de ejecuciÛn:
+Ejemplo de ejecuci√≥n:
 
 Cantidad de elementos a procesar 3
 
@@ -39,7 +39,7 @@ El producto con mayor descuento tiene un 31,72 %.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-AclaraciÛn:
+Aclaraci√≥n:
 
 La matriz cargada debe quedar:
 
@@ -82,7 +82,7 @@ int main(){
 	float mat[N][2];
 	float desc[N];
 	
-	float min;
+	float max;
 	
 	// Llamada a la funcion
 	ingresar(mat, N);
@@ -99,7 +99,7 @@ int main(){
 	// Buscamos el moyor descuento
 	for (int i = 0; i < N; i++){
 		
-		if (desc[i] > min)
+		if (desc[i] > max)
 			max = desc[i];
 		
 	}
