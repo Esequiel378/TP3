@@ -9,7 +9,7 @@ A su vez recibe como argumento un arreglo de tamaño indeterminado y un entero po
 La función debe copiar los elementos del arreglo conRepetir[] al arreglo sinRepetir[] pero sin repeitr valores a su vez debe almacenar en el argumento pasado 
 por referencia M la cantidad de elementos sin repetir
 */
-#include<iostream>
+#include <iostream>
 
 void eliminarRepetidos(int conRepetir[], int N, int sinRepetir[], int &M); // Declaracion de la funcion
 
